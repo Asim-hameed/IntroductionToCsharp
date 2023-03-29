@@ -1,4 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Enter first Name: ");
 //string fname= Console.ReadLine();
 //Console.WriteLine("Enter Last Name: ");
@@ -208,7 +214,7 @@
 
 //void sum(ref int n1,ref int n2)
 //{
-    
+
 //    Console.WriteLine(n1 + n2);
 //    n1 += n2;
 //}
@@ -217,12 +223,89 @@
 //sum(ref n1, ref n2);
 //Console.WriteLine(n1);
 
-void passByOut(out int a)
-{
-    a = 20;
-    Console.WriteLine("Pass by out value is {0}",a);
-}
+//void passByOut(out int a)
+//{
+//    a = 20;
+//    Console.WriteLine("Pass by out value is {0}",a);
+//}
 
-int a;
-passByOut(out a);
-Console.WriteLine(a);
+//int a;
+//passByOut(out a);
+//Console.WriteLine(a);
+
+//var b = "asim";
+//Console.WriteLine(b.GetType());
+
+//dynamic a = "asim";
+//a = 10;
+//Console.WriteLine(a.GetType());
+
+//void fun(dynamic a)
+//{
+//    Console.WriteLine(a);
+//}
+
+//// dynamic have no intellisense as they are compiled at run time
+//// they can be assigned other data types for instance string to int to char
+//// they can be passed as parameter in function
+//// they can not be returned by return keyword
+//// dynamic is reference 
+
+//fun(a);
+//fun(b);
+
+namespace IntroductionToCsharp 
+{
+    class student
+    {
+        //int rollno;
+        //string name;
+        //int age;
+        //int standard;
+
+        //parametrized constructor start
+        //int empId;
+        //string empName;
+        //public student(int empid,string name) 
+        //{
+        //    empId = empid;
+        //    empName = name;
+        //    Console.WriteLine("Constructor Called {0}{1}",empId,empName);
+        //}
+
+
+
+        //parametrized constructor end
+
+
+        //public void setRollNo(int rollno,string name,int age,int standard)
+        //{
+        //    this.rollno = rollno;
+        //    this.name = name;
+        //    this.age = age;
+        //    this.standard = standard;
+        //}
+        //public void getRollNo()
+        //{
+        //    Console.WriteLine("Roll no is {0}", this.rollno);
+        //    Console.WriteLine("Name is {0}",this.name);
+        //    Console.WriteLine("Age is {0}", this.age);
+        //    Console.WriteLine("Standard is {0}",this.standard);
+        //}
+
+        static void Main(string[] args)
+        {
+            //student student = new student();
+
+            //student.setRollNo(0365, "Asim", 25, 16);
+            //student.getRollNo();
+            //Console.ReadLine();
+
+            //student student = new student(23,"Asim");
+
+
+        }
+    }
+
+
+}
