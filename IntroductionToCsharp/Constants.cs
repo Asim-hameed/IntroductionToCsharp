@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace IntroductionToCsharp
 {
-    internal class Constants
+    public class Constants
     {
-        void fun()
+        public void fun()
+
         {
-            Console.WriteLine("I am Consonant Class");
+            Console.WriteLine("I am Constant Class");
         }
     }
 }

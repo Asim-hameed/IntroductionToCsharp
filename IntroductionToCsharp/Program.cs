@@ -67,26 +67,162 @@
 //    Console.WriteLine("Enter valid credentials");
 //}
 
-using IntroductionToCsharp;
-///
-int i = 0;
-do
+//using IntroductionToCsharp;
+/////
+//int i = 0;
+//do
+//{
+//    if(i == 5)
+//    {
+//        goto stop;
+//    }
+//    Console.WriteLine( i );
+//    i++;
+//} while (i<10);
+
+//Console.WriteLine( "Loop terminates" );
+
+//stop:
+//Console.WriteLine("Program exits");
+
+//int[,] array = new int[3,4]
+//{
+//    {1,2,3,4 },
+//    {5,6,7,8 },
+//    {9,10, 11, 12 } 
+//};
+
+//for(int i = 0; i < array.GetLength(0); i++)
+//{
+//    for(int j = 0; j < array.GetLength(1); j++)
+//    {
+//        Console.WriteLine(array[i, j]);
+//    }
+//}
+
+//string[] array = new string[] { "Asim", "Hameed" };
+//foreach(var i in array) 
+//{
+//    Console.WriteLine(array[i]);
+//}
+
+// Jagged Array
+
+//int[][] array = new int[3][];
+//array[0] = new[] {1,2,3,4};
+//array[1] = new[] {5,6,7,8,7,6,5};
+//array[2] = new[] {9,10,11};
+
+//for (int i = 0; i < array.GetLength(0); i++)
+//{
+//    for (int j = 0; j < array[i].Length; j++)
+//    {
+//        Console.WriteLine(array[i][j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//foreach(int[] i in array)
+//{
+//    foreach (int j in i)
+//    {
+//        Console.WriteLine(j);
+//    }
+//}
+
+//Jagged Array end
+
+
+//public class mainEntryPoint
+//{
+
+//    public static void Main(string[] args)
+//    {
+//        showNameAge("asim",25);
+//    }
+//    public static void showNameAge(string name,int age)
+//    {
+//        Console.WriteLine(name + " " + age);
+//    }
+
+
+
+//}
+
+//static void addition(int num1,int num2)
+//{
+//    Console.WriteLine(num1 + num2);
+//}
+//static void subtraction(int num1, int num2)
+//{
+//    Console.WriteLine(num1 - num2);
+//}
+//static void multiplication(int num1, int num2)
+//{
+//    Console.WriteLine(num1 * num2);
+//}
+//static void division(int num1, int num2)
+//{
+//    Console.WriteLine(num1 / num2);
+//}
+
+//int num1, num2;
+
+//Console.WriteLine("Enter num1: ");
+//num1 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Enter num2: ");
+//num2 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Enter operator ");
+//char op = char.Parse(Console.ReadLine());
+
+//if(op == '+')
+//{
+//    addition(num1,num2);
+//}
+//else if (op == '-')
+//{
+//    subtraction(num1,num2);
+//}
+//else if (op == '*')
+//{
+//    multiplication(num1,num2);
+//}
+//else if (op=='/')
+//{
+//    division(num1,num2);
+//}
+
+//namespace IntroductionToCsharp
+//{
+
+//    struct Employee
+//    {
+//        public int salary { get; set; }
+//        public int age { get; set; }
+//    }
+//    public static void Main(string[] args)
+//    {
+//        Employee employee = new Employee();
+//    }
+//}
+
+//void sum(ref int n1,ref int n2)
+//{
+    
+//    Console.WriteLine(n1 + n2);
+//    n1 += n2;
+//}
+
+//int n1 = 2,n2=5;
+//sum(ref n1, ref n2);
+//Console.WriteLine(n1);
+
+void passByOut(out int a)
 {
-    if(i == 5)
-    {
-        goto stop;
-    }
-    Console.WriteLine( i );
-    i++;
-} while (i<10);
+    a = 20;
+    Console.WriteLine("Pass by out value is {0}",a);
+}
 
-Console.WriteLine( "Loop terminates" );
-
-stop:
-Console.WriteLine("Program exits");
-
-var obj = new Constants();
-obj.
-
-
-Console.ReadLine();
+int a;
+passByOut(out a);
+Console.WriteLine(a);
