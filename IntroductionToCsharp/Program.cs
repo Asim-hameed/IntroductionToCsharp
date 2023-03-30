@@ -437,7 +437,7 @@ namespace IntroductionToCsharp
 
             //Static Class
 
-            Example.getDetails();
+            //Example.getDetails();
 
             //END.........
 
