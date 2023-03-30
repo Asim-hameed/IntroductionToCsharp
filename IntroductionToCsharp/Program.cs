@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -254,9 +255,99 @@ using System.Threading.Tasks;
 //fun(a);
 //fun(b);
 
-namespace IntroductionToCsharp 
+namespace IntroductionToCsharp
 {
-    class student
+    class Student
+    {
+        //public int rollno;
+        //public string fname;
+        //public string lname;
+        //public int standard;
+        //public static string schoolName = "SKKPHSSM";
+        //public static int getFees()
+        //{
+        //    return 4000;
+        //}
+        //public static int getannualinc(int fee)
+        //{
+        //    return fee/10;
+        //}
+
+        //public static string pName = "Asim";
+        //public static int pAge = 25;
+
+        //public Student() 
+        //{
+        //    Console.WriteLine("Default constructor Invoked!");
+        //}
+        //static Student()
+        //{
+        //    pName = "ali";
+        //    pAge = 22;
+        //    Console.WriteLine("Static constructor Invoked!! ");
+
+        //}
+        //public void getDetials()
+        //{
+        //    Console.WriteLine("person name is {0}", pName);
+        //    Console.WriteLine("perons age is {0}", pAge);
+        //}
+        //string name;
+        //int age;
+        //public Student(string name, int age)
+        //{
+        //    this.name = name;
+        //    this.age = age;
+        //}
+
+        //public Student(Student student)  //copy constructor
+        //{ 
+        //    this.name=student.name;
+        //    this.age = student.age;
+        //}
+        //public void getData()
+        //{
+        //    Console.WriteLine("Name is {0}", name);
+        //    Console.WriteLine("Age is {0}", age);
+        //}
+
+        //private constructor
+
+        //string name;
+        //public Student(string name)
+        //{
+        //    this.name=name;
+        //}
+        //private Student() { }
+
+        //public static void getTime()
+        //{
+        //    Console.WriteLine(DateTime.Now.ToString());
+        //}
+
+        //END....
+
+    }
+
+    //static class Example{
+    //    public static int prodId;
+    //    public static string prodName;
+    //    public static int prodPrice;
+
+    //    static Example()
+    //    {
+    //        prodId = 1;
+    //        prodName = "Asim";
+    //        prodPrice = 100;
+    //    }
+    //    public static void getDetails()
+    //    {
+    //        Console.WriteLine("Product id: {0}", prodId);
+    //        Console.WriteLine("Product Name: {0}", prodName);
+    //        Console.WriteLine("Product price: {0}", prodPrice);
+    //    }
+    //}
+    class Program
     {
         //int rollno;
         //string name;
@@ -303,7 +394,56 @@ namespace IntroductionToCsharp
 
             //student student = new student(23,"Asim");
 
+            //Student student = new Student();
+            //student.rollno = 1;
+            //student.fname = "Asim";
+            //student.lname = "Hameed";
+            //student.standard = 16;
+            //Student student2 = new Student();
+            //student2.rollno = 2;
+            //student2.fname = "Ali";
+            //student2.lname = "Hassan";
+            //student2.standard = 15;
+            //Console.WriteLine( student.rollno+"  "+student2.rollno);
+            //Console.WriteLine(student.fname + "  " + student2.fname);
+            //Console.WriteLine(student.lname + "  " + student2.lname);
+            //Console.WriteLine(student.standard + "  " + student2.standard);
+            //Console.WriteLine(Student.getFees() + "  " + Student.getFees());
+            //Console.WriteLine(Student.getannualinc(4000) + "  " + Student.getannualinc(4000));
 
+            //Console.WriteLine(Student.schoolName + "  " + Student.schoolName);
+            //static constructor
+            //Student student = new Student();
+            //student.getDetials();
+            //Student student1 = new Student();
+            // END
+
+            //Student student = new Student("Asim",25);
+            //student.getData();
+
+            ////copy contructor
+
+            //Student copy = new Student(student);
+            //copy.getData();
+
+            //private constructor called only for static members
+            // they don't have any object,only called by class name 
+            // if there is parameterized constructor then object can be made
+            //Student.getTime();
+
+            //Student student = new Student("Asim");
+
+            // END........
+
+            //Static Class
+
+            Example.getDetails();
+
+            //END.........
+
+            //Destructor
+
+            Console.ReadLine();
         }
     }
 
