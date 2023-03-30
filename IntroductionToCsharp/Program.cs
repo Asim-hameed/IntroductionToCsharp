@@ -1,9 +1,11 @@
-﻿using System;
+﻿using AccessSpecifier;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Enter first Name: ");
@@ -327,6 +329,28 @@ namespace IntroductionToCsharp
 
         //END....
 
+        private string name;
+        private int age;
+
+        public void setDetails(string name, int age)
+        {
+            if(string.IsNullOrEmpty(name)==true && age<=0)
+            {
+                Console.WriteLine("Your name and age is required");
+            }
+            else
+            {
+                this.name = name;
+                this.age = age;
+            }
+            //this.name = name;
+            //this.age = age;
+        }
+        public void getName() 
+        {
+            Console.WriteLine( "Your name is {0}",name);
+        }
+
     }
 
     //static class Example{
@@ -347,7 +371,7 @@ namespace IntroductionToCsharp
     //        Console.WriteLine("Product price: {0}", prodPrice);
     //    }
     //}
-    class Program
+    class Program: Access
     {
         //int rollno;
         //string name;
@@ -443,9 +467,19 @@ namespace IntroductionToCsharp
 
             //Destructor
 
+            //Student student = new Student();
+            //student.show();
+
+            //Program program = new Program();
+            //program.show();
+
+            Student student = new Student();
+            student.setDetails("Asim",0);
+            student.getName();
+
             Console.ReadLine();
         }
     }
 
 
-}
+} 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntroductionToCsharp
 {
-    public class Constants
+    class Constants
     {
         public void fun()
 
